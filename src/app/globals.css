@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #F6F0E5;
+  --color-agave: #5B6E5A;
+  --color-sage: #879785;
+  --color-deep-sage: #3F564C;
+  --color-charcoal: #2F2F2F;
+  --color-gold: #B49A63;
+  --color-parchment-deep: color-mix(in srgb, #F6F0E5 86%, #879785);
+  --color-ink-soft: #4A4A47; /* body-secondary text, 8.3:1 on parchment */
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", "Cormorant", Georgia, serif;
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --parchment: #F6F0E5;
+  --agave: #5B6E5A;
+  --sage: #879785;
+  --deep-sage: #3F564C;
+  --charcoal: #2F2F2F;
+  --gold: #B49A63;
+  --font-cormorant: "Cormorant Garamond";
+  --font-inter: "Inter Variable";
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--parchment);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; color: var(--deep-sage); letter-spacing: -0.005em; }
+.accent { font-family: var(--font-display); font-style: italic; font-weight: 500; }
+
+/* Visible focus for everyone */
+:focus-visible { outline: 3px solid var(--deep-sage); outline-offset: 3px; border-radius: 2px; }
+.on-dark :focus-visible { outline-color: var(--parchment); }
+
+::selection { background: color-mix(in srgb, var(--sage) 45%, transparent); }
+
+/* ---- Paper texture overlay (gentle drift) -------------------------------- */
+.paper-overlay {
+  position: fixed; inset: -50%; z-index: 0; pointer-events: none;
+  background-image: var(--texture-paper);
+  background-size: 640px 640px;
+  mix-blend-mode: multiply;
+  opacity: .55;
+  animation: paper-drift 240s linear infinite;
+}
+@keyframes paper-drift { to { transform: translate3d(-640px, -640px, 0); } }
+
+/* ---- Slow fade-ins (progressive: content is visible without JS) ---------- */
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity 1.4s cubic-bezier(.2,.6,.2,1), transform 1.4s cubic-bezier(.2,.6,.2,1); transition-delay: var(--d, 0ms); }
+.js .reveal.in { opacity: 1; transform: none; }
+
+/* ---- Age gate ------------------------------------------------------------ */
+html[data-age="yes"] .age-gate { display: none; }
+noscript .age-gate { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .paper-overlay { animation: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  [data-parallax] { transform: none !important; }
+}
+
+/* Gold hairline ornament */
+.ornament { display: flex; align-items: center; gap: .9rem; color: var(--gold); }
+.ornament::before, .ornament::after { content: ""; height: 1px; width: 3.25rem; background: currentColor; opacity: .85; }
+.ornament i { width: 6px; height: 6px; background: currentColor; transform: rotate(45deg); }

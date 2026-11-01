@@ -1,0 +1,38 @@
+{
+  "name": "manave-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MANAVÉ by Arroyo Seco — premium tequila brand website",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "preview": "npm run build && wrangler pages dev out --compatibility-date=2025-01-01",
+    "deploy": "npm run build && wrangler pages deploy out --project-name=manave-web",
+    "assets": "python3 scripts/generate-brand-assets.py"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "next": "15.5.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261001.1",
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.5.27",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~5.9.0",
+    "wrangler": "^4.0.0"
+  }
+}

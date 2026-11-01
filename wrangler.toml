@@ -1,0 +1,4 @@
+name = "manave-web"
+pages_build_output_dir = "out"
+compatibility_date = "2025-01-01"
+# Secrets and variables are set in the Cloudflare dashboard (see README).

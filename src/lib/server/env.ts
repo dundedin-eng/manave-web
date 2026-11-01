@@ -1,0 +1,12 @@
+export interface Env {
+  NEXT_PUBLIC_SUPABASE_URL: string;
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
+  RESEND_API_KEY: string;
+  RESEND_FROM_EMAIL: string;
+  NOTIFY_EMAIL: string;
+  NEXT_PUBLIC_TURNSTILE_SITE_KEY?: string;
+  TURNSTILE_SECRET_KEY: string;
+  NEXT_PUBLIC_SITE_URL?: string;
+  MAILING_ADDRESS?: string;
+}
