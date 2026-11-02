@@ -12,7 +12,7 @@ export const siteConfig = {
   locale: "en_US",
   nom: "NOM CRT 1649",
   /** Shown in footer + contact page. Replace with the real inbox. */
-  contactEmail: "hello@manave.co",
+  contactEmail: "contact@manave.co",
   /** Used when ecommerceEnabled is true. */
   shopUrl: "/contact",
   social: {
