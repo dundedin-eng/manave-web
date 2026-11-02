@@ -1,4 +1,14 @@
-name = "manave-web"
+name = "manave-site"
 pages_build_output_dir = "out"
 compatibility_date = "2025-01-01"
-# Secrets and variables are set in the Cloudflare dashboard (see README).
+
+# Non-secret settings read by the Cloudflare Pages Functions at runtime.
+# Secrets (SUPABASE_SERVICE_ROLE_KEY, RESEND_API_KEY, TURNSTILE_SECRET_KEY)
+# are set in the Cloudflare dashboard as Secrets and are NOT stored here.
+[vars]
+NEXT_PUBLIC_SUPABASE_URL = "https://zowdlbcdbtyrjbtlunbd.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpvd2RsYmNkYnR5cmpidGx1bmJkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MzAxMTEsImV4cCI6MjEwOTEwNjExMX0.3XPZ2lAmlYf5VavUvjgIv_Mm6pkqYl_UfEyJRolit-4"
+NEXT_PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAAFvYh0HzBfYvFPMH"
+NEXT_PUBLIC_SITE_URL = "https://manave-site.pages.dev"
+RESEND_FROM_EMAIL = "MANAVÉ <contact@mail.manave.co>"
+NOTIFY_EMAIL = "contact@manave.co"
