@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     "craft tequila",
     "premium flavored tequila",
     "MANAVÉ",
-    "Arroyo Seco",
   ],
   icons: { icon: [{ url: brandAssets.favicon.src, type: "image/svg+xml" }], apple: brandAssets.monogram.src },
   formatDetection: { telephone: false },

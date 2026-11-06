@@ -16,7 +16,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "MANAVÉ | Premium Tequila from Los Altos de Jalisco",
   description:
-    "MANAVÉ by Arroyo Seco is premium craft tequila from Los Altos de Jalisco, made in El Arenal. Discover our Blanco and three premium flavored tequila expressions at 40% ABV — never a liqueur.",
+    "MANAVÉ is premium craft tequila from Los Altos de Jalisco, made in El Arenal. Discover our Blanco and three premium flavored tequila expressions at 40% ABV — never a liqueur.",
   path: "/",
   absoluteTitle: true,
 });

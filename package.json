@@ -2,7 +2,7 @@
   "name": "manave-web",
   "version": "1.0.0",
   "private": true,
-  "description": "MANAVÉ by Arroyo Seco — premium tequila brand website",
+  "description": "MANAVÉ — premium tequila brand website",
   "engines": {
     "node": ">=20.9"
   },

@@ -22,14 +22,14 @@ export const brandAssets = {
   heroMobile: { src: `${BASE}/hero-agave-mobile.webp`, width: 900, height: 1400, alt: "" },
   watermark: { src: `${BASE}/watermark-agave.webp`, width: 1400, height: 1400, alt: "" },
   texturePaper: { src: `${BASE}/texture-paper.webp`, width: 1024, height: 1024, alt: "" },
-  logo: { src: `${BASE}/logo.svg`, width: 360, height: 168, alt: "MANAVÉ by Arroyo Seco" },
+  logo: { src: `${BASE}/logo.svg`, width: 498, height: 132, alt: "MANAVÉ" },
   monogram: { src: `${BASE}/monogram.svg`, width: 120, height: 120, alt: "MANAVÉ monogram" },
   favicon: { src: `${BASE}/favicon.svg`, width: 64, height: 64, alt: "" },
   socialPreview: {
     src: `${BASE}/social-preview.jpg`,
     width: 1200,
     height: 630,
-    alt: "MANAVÉ by Arroyo Seco — watercolor agave",
+    alt: "MANAVÉ — watercolor agave",
   },
 } as const satisfies Record<string, BrandAsset>;
 

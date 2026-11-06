@@ -4,7 +4,7 @@ const SITE_URL_ENV = typeof process !== "undefined" ? process.env.NEXT_PUBLIC_SI
 
 export const siteConfig = {
   name: "MANAVÉ",
-  fullName: "MANAVÉ by Arroyo Seco",
+  fullName: "MANAVÉ",
   tagline: "Reuniendo a Familiares y Amigos",
   description:
     "MANAVÉ is premium tequila crafted from agave cultivated in Los Altos de Jalisco, bottled in El Arenal, Jalisco. Blanco plus three authentic flavored expressions at 40% ABV.",

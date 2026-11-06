@@ -18,9 +18,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-sage/40 bg-parchment/90 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 sm:px-8">
-        <Link href="/" aria-label="MANAVÉ by Arroyo Seco — home" className="shrink-0">
+        <Link href="/" aria-label="MANAVÉ — home" className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={brandAssets.logo.src} alt="MANAVÉ by Arroyo Seco" width={brandAssets.logo.width} height={brandAssets.logo.height} className="h-14 w-auto" />
+          <img src={brandAssets.logo.src} alt="MANAVÉ" width={brandAssets.logo.width} height={brandAssets.logo.height} className="h-11 w-auto" />
         </Link>
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">

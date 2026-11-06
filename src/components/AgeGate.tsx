@@ -71,7 +71,7 @@ export default function AgeGate() {
         className="relative w-full max-w-lg border border-gold/70 bg-parchment/95 px-8 py-12 text-center shadow-[0_30px_80px_-40px_rgba(47,47,47,.45)] sm:px-14"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={brandAssets.logo.src} alt="MANAVÉ by Arroyo Seco" width={brandAssets.logo.width} height={brandAssets.logo.height} className="mx-auto h-24 w-auto" />
+        <img src={brandAssets.logo.src} alt="MANAVÉ" width={brandAssets.logo.width} height={brandAssets.logo.height} className="mx-auto h-[75px] w-auto" />
         {state !== "no" ? (
           <>
             <h2 id="age-title" className="mt-9 text-3xl sm:text-4xl">Are you 21 years of age or older?</h2>

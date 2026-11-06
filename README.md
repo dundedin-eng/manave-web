@@ -1,6 +1,6 @@
 # manave-web
 
-Website for **MANAVÉ by Arroyo Seco** (manave.co) — premium tequila from Los Altos de Jalisco.
+Website for **MANAVÉ** (manave.co) — premium tequila from Los Altos de Jalisco.
 
 Next.js 15 · React 19 · TypeScript · Tailwind CSS v4 · App Router (static export) · Cloudflare Pages + Pages Functions · Supabase · Resend · Cloudflare Turnstile.
 

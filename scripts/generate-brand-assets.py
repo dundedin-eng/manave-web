@@ -222,12 +222,10 @@ def write_svgs():
     reg = font_for("cormorant-garamond-latin-600-normal.woff")
     ital = font_for("cormorant-garamond-latin-500-italic.woff")
     word, ww = glyph_paths("MANAVÉ", reg, 92, tracking=14)
-    sub, sw_ = glyph_paths("by Arroyo Seco", ital, 26, tracking=2)
-    W = max(ww, sw_) + 40
-    logo = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W:.0f} 168" role="img" aria-label="MANAVÉ by Arroyo Seco">
-  <title>MANAVÉ by Arroyo Seco</title>
+    W = ww + 40
+    logo = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W:.0f} 132" role="img" aria-label="MANAVÉ">
+  <title>MANAVÉ</title>
   <g fill="#3F564C"><path transform="translate({(W - ww) / 2:.1f} 100)" d="{word}"/></g>
-  <g fill="#5B6E5A"><path transform="translate({(W - sw_) / 2:.1f} 146)" d="{sub}"/></g>
   <path d="M{W / 2 - 22:.0f} 118h44" stroke="#B49A63" stroke-width="1.2"/>
 </svg>'''
     open(os.path.join(OUT, "logo.svg"), "w").write(logo)
@@ -269,9 +267,8 @@ def social():
     except Exception:
         f1 = f2 = f3 = ImageFont.load_default()
     d.text((80, 190), "MANAVÉ", font=f1, fill=(63, 86, 76))
-    d.text((84, 335), "by Arroyo Seco", font=f2, fill=(91, 110, 90))
-    d.line([(84, 395), (170, 395)], fill=(180, 154, 99), width=2)
-    d.text((84, 415), "Reuniendo a Familiares y Amigos", font=f3, fill=(47, 47, 47))
+    d.line([(84, 345), (170, 345)], fill=(180, 154, 99), width=2)
+    d.text((84, 365), "Reuniendo a Familiares y Amigos", font=f3, fill=(47, 47, 47))
     im.save(os.path.join(OUT, "social-preview.jpg"), quality=88, optimize=True)
 
 

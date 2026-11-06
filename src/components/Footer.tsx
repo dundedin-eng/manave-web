@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-parchment/25">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-xs text-parchment/90 sm:px-8 md:flex-row md:justify-between">
-          <p>© {new Date().getFullYear()} MANAVÉ by Arroyo Seco. {siteConfig.nom}. Tequila, 40% Alc./Vol. (80 Proof).</p>
+          <p>© {new Date().getFullYear()} MANAVÉ. {siteConfig.nom}. Tequila, 40% Alc./Vol. (80 Proof).</p>
           <p>Please enjoy responsibly. Must be 21 or older.</p>
         </div>
       </div>

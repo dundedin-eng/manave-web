@@ -22,7 +22,6 @@ export default function Hero() {
           <h1 id="hero-title" className="text-6xl leading-none tracking-[0.14em] sm:text-7xl lg:text-8xl">
             MANAVÉ
           </h1>
-          <p className="accent mt-3 text-3xl text-agave sm:text-4xl">by Arroyo Seco</p>
           <div className="ornament mt-8" aria-hidden="true"><i /></div>
           <p className="accent mt-8 text-2xl text-charcoal sm:text-[1.7rem]">{siteConfig.tagline}</p>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft">
